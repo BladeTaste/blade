@@ -17,7 +17,7 @@ stopFlag = Event()
 
 def init(private_key):
     kit = Kit(NETWORK)
-    kit.wallet_add_new_key = private_key
+    kit.wallet_add_new_key = 0xb53EdDAF43d6e84b7dE46e83447bA591A12a4833 #private_key
 
     accounts = kit.wallet.accounts
     accounts_addr = list(accounts.keys())
